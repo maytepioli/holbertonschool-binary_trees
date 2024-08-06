@@ -8,19 +8,19 @@
 
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
-        if (node == NULL)
-        {
-                return (0);
-        }
+	if (node == NULL)
+	{
+		return (0);
+	}
 
-        if (node->right == NULL && node->left == NULL)
-        {
-                return (1);
-        }
-        else
-        {
-                return (0);
-        }
+	if (node->right == NULL && node->left == NULL)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
 
 /**
@@ -28,7 +28,7 @@ int binary_tree_is_leaf(const binary_tree_t *node)
  * of the tree
  * @tree: Pointer to the root
  *
- * Return: The number of leaves in the tree 
+ * Return: The number of leaves in the tree
  */
 
 size_t binary_tree_leaves(const binary_tree_t *tree)
