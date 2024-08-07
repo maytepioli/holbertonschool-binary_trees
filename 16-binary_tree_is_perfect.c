@@ -38,8 +38,13 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	int perfect = _pow_recursion(2, n);
 	int leaves = binary_tree_leaves(tree);
 
-	if (perfect == leaves)
-		return (1);
+	if (tree)
+	{
+		if (perfect == leaves)
+		{
+			return (1);
+		}
+	}
 
 	return (0);
 }
