@@ -16,11 +16,12 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 	if (node == NULL)
 		return (NULL);
 
+	siblingNode = binary_tree_sibling(node->parent);
+	uncleNode = siblingNode;
+	
 	if (siblingNode == NULL || uncleNode == NULL)
 		return (NULL);
 
-	siblingNode = binary_tree_sibling(node->parent);
 
-	uncleNode = siblingNode;
 	return (uncleNode);
 }
