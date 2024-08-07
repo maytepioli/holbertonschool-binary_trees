@@ -32,7 +32,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	{
 		counter2 = 0;
 	}
-	if (counter == counter2 && tree->left != NULL && tree->right != NULL)
+	if (counter == counter2)
 	{
 		return (1);
 	}
